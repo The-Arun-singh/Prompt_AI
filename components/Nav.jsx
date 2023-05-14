@@ -45,10 +45,9 @@ const Nav = () => {
               Create Post
             </Link>
 
-            <button type="button" onClick={() => signOut()} className="outline_btn">
+            <button type="button" onClick={() => signOut({ callbackUrl: 'https://arun-promptai.netlify.app'})} className="outline_btn">
               Sign Out
             </button>
-          {console.log(session)}
             <Link href="/profile">
               <Image 
                 src= {session?.user.image}
@@ -111,8 +110,7 @@ const Nav = () => {
                   type='button'
                   onClick={() => {
                     setToggleDropdown(false);
-                    signOut();
-                    router.push("/");
+                    signOut({ callbackUrl: 'https://arun-promptai.netlify.app'});
                   }}
                   className='mt-5 w-full black_btn' 
                 >
