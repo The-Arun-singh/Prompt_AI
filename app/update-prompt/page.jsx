@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { useState, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -30,7 +30,7 @@ const EditPrompt = () => {
 
         if(promptId) getPromptDetails();
     }, [promptId])
-
+ 
     const updatePrompt  = async (e) => {
         e.preventDefault();
         setSubmitting(true);
