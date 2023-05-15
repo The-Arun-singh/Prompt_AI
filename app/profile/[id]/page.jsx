@@ -21,8 +21,8 @@ const UserProfile = ({ params }) => {
         }
 
         if(params?.id) {fetchPosts()}
-    }, [params.id])
-
+    }, [params?.id])
+ 
 
   return (
     <Profile
