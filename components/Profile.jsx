@@ -6,7 +6,7 @@ const Profile = ({
   return (
     <section className="w-full flex-center flex-col">
       <h1 className="head_text">
-        <span className="blue_gradient">{name}'s Profile</span>
+        <span className="blue_gradient">{name} Profile</span>
       </h1>
 
       <p className="desc ">
